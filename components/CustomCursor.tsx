@@ -14,8 +14,8 @@ export default function CustomCursor() {
 
     useEffect(() => {
         const moveCursor = (e: MouseEvent) => {
-            cursorX.set(e.clientX - 16);
-            cursorY.set(e.clientY - 16);
+            cursorX.set(e.clientX - 32);
+            cursorY.set(e.clientY - 32);
         };
 
         const handleMouseOver = (e: MouseEvent) => {
@@ -37,19 +37,30 @@ export default function CustomCursor() {
 
     return (
         <motion.div
-            className="fixed top-0 left-0 w-8 h-8 rounded-full border-2 border-primary pointer-events-none z-[9999]"
+            className="fixed top-0 left-0 pointer-events-none z-[9999]"
             style={{
                 translateX: cursorXSpring,
                 translateY: cursorYSpring,
             }}
-            animate={{
-                scale: isHovered ? 2.5 : 1,
-                backgroundColor: isHovered ? "#E60023" : "transparent",
-            }}
-            transition={{
-                scale: { duration: 0.2 },
-                backgroundColor: { duration: 0.2 }
-            }}
-        />
+        >
+            <motion.svg
+                width="64"
+                height="64"
+                viewBox="0 0 24 24"
+                animate={{
+                    scale: isHovered ? 1.5 : 1,
+                }}
+                transition={{
+                    scale: { duration: 0.2 },
+                }}
+            >
+                <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                    fill="#E60023"
+                    stroke="#E60023"
+                    strokeWidth="2"
+                />
+            </motion.svg>
+        </motion.div>
     );
 }
