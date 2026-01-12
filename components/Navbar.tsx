@@ -11,19 +11,21 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="fixed top-6 left-1/2 -translate-x-1/2 transform z-50 flex items-center justify-between px-8 py-3 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-[90%] max-w-4xl">
-            <div className="text-xl font-bold tracking-tighter text-black uppercase cursor-pointer hover:scale-105 transition-transform">
+        <nav
+            className="fixed top-6 left-1/2 -translate-x-1/2 transform z-[10002] flex items-center justify-between px-8 py-3 w-[90%] max-w-4xl transition-all duration-300"
+        >
+            <div className="text-xl font-black tracking-tighter text-black uppercase cursor-pointer hover:scale-105 hover:text-white transition-all">
                 <Link href="/">Johnny Boy</Link>
             </div>
 
             <div className="flex items-center gap-8 text-sm font-medium text-gray-800">
-                <Link href="/" className="relative hover:text-primary transition-colors group">
+                <Link href="/" className="relative hover:text-white transition-colors group">
                     Work
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full" />
                 </Link>
-                <Link href="/profile" className="relative hover:text-primary transition-colors group">
+                <Link href="/profile" className="relative hover:text-white transition-colors group">
                     Profile
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all group-hover:w-full" />
                 </Link>
 
                 <button
