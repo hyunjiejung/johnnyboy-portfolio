@@ -11,7 +11,7 @@ export default async function ProfilePage() {
             <div className="grid lg:grid-cols-2 gap-16 items-start">
                 <div className="space-y-12">
                     <div>
-                        <h1 className="text-5xl font-bold font-serif mb-6">About the Artist</h1>
+                        <h1 className="text-5xl font-bold mb-6">About the Artist</h1>
                         <div className="prose prose-lg text-gray-600 leading-relaxed text-lg">
                             <p>
                                 Johnny Boy is an artist based in Seoul, known for his vibrant usage of red and chaotic yet structured compositions.

@@ -36,14 +36,14 @@ export default function Gallery({ artworks }: GalleryProps) {
                             />
                         </div>
                     ) : (
-                        <div className="w-full h-64 bg-gray-200 flex items-center justify-center text-gray-400 font-serif italic">
+                        <div className="w-full h-64 bg-gray-200 flex items-center justify-center text-gray-400 italic">
                             No Image
                         </div>
                     )}
 
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
                         <div className="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 delay-75">
-                            <h3 className="text-3xl font-bold font-serif text-white mb-2 italic tracking-wide">{art.title}</h3>
+                            <h3 className="text-3xl font-bold text-white mb-2 italic tracking-wide">{art.title}</h3>
                             <div className="flex items-center gap-4 text-white/80 text-sm font-medium uppercase tracking-widest">
                                 <span>{art.year}</span>
                                 <span className="w-1 h-1 bg-primary rounded-full" />

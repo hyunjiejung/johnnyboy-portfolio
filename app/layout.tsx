@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Outfit, Playfair_Display } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
+  variable: "--font-poppins"
+});
 
 export const metadata: Metadata = {
   title: "Johnny Boy Portfolio",
@@ -20,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outfit.variable} ${playfair.variable} font-sans antialiased bg-gray-50/50 text-gray-900 overflow-x-hidden selection:bg-primary selection:text-white cursor-none`}>
+      <body className={`${poppins.variable} font-sans antialiased bg-gray-50/50 text-gray-900 overflow-x-hidden selection:bg-primary selection:text-white cursor-none`}>
         <CustomCursor />
         <div className="bg-noise" />
         <Navbar />

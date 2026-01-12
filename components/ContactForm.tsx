@@ -58,7 +58,7 @@ export default function ContactForm() {
                 </div>
             )}
 
-            <h2 className="text-3xl font-bold mb-8 text-gray-900 font-serif italic text-center">Get in Touch</h2>
+            <h2 className="text-3xl font-bold mb-8 text-gray-900 italic text-center">Get in Touch</h2>
 
             <form ref={form} onSubmit={sendEmail} className="space-y-5">
                 <div>

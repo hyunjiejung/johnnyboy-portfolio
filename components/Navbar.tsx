@@ -12,7 +12,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed top-6 left-1/2 -translate-x-1/2 transform z-50 flex items-center justify-between px-8 py-3 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-[90%] max-w-4xl">
-            <div className="text-xl font-bold tracking-tighter text-black uppercase font-serif cursor-pointer hover:scale-105 transition-transform">
+            <div className="text-xl font-bold tracking-tighter text-black uppercase cursor-pointer hover:scale-105 transition-transform">
                 <Link href="/">Johnny Boy</Link>
             </div>
 

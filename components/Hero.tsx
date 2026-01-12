@@ -15,7 +15,7 @@ export default function Hero() {
             style={{ y, opacity }}
             className="py-32 md:py-48 text-center flex flex-col items-center justify-center min-h-[80vh] relative z-20"
         >
-            <h1 className="text-[15vw] md:text-[12rem] font-bold font-serif mb-6 tracking-tighter text-black leading-[0.8] select-none pointer-events-none mix-blend-multiply">
+            <h1 className="text-[15vw] md:text-[12rem] font-bold mb-6 tracking-tighter text-black leading-[0.8] select-none pointer-events-none mix-blend-multiply">
                 {title.split("").map((char, index) => (
                     <motion.span
                         key={index}
